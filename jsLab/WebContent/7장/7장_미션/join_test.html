@@ -24,16 +24,27 @@
 
 		$("form").submit(function() {
 			var tel1_pattern = /(^01[016789]$)/; //정규식
-
+			var tel23_pattern =/(^[0-9]{4}$)/;
+		    var email_pattern = /(^[0-9a-zA-Z]([-_.])?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$)/i;
+		
 			if ($("#id").val() == "") {
 				alert("아이디를 꼭 입력하세요!");
 				$("#id").focus();
 				return false;
 			}
 			
+			console.log("$#pwd").val() == $("#pwd2").val(),
 			
 			
-			
+			if ($("#pwd").val() == $("#pwd2").val()) {
+				alert("비밀번호가 맞는지 확인하세요!");
+				$("#id").focus();
+				return false;
+				
+				
+			var tel1_exp= /^[010|011|016|017|018|019]$/; 
+			var tel1_exp= /^01[016789]$/;			
+			var tel2_exp= /^[0-9]{4}$/;
 			
 			
 

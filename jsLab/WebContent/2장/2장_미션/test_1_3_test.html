@@ -6,8 +6,13 @@
 <script type="text/javascript">
   var user_height=prompt("당신의 신장은?","0");
   var user_weight=prompt("당신의 체중은?","0");
-  var normal_weight=
  
+	  var nomal_weight = (user_hight - 100) * 0.9;
+	  var result = nomal_weight < user_wight ? "적정몸무게 이상" : "적정몸무게 미달";
+	  
+	  
+	  
+	  
   document.write(result);
 </script>
 </head>
